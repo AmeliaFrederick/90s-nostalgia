@@ -60,3 +60,24 @@ header {
     padding-left: 0%;
     padding-right: 0%;
 }
+/* 9. Update the `nav` by adjusting the following using the correct selector for the task:
+  - Remove bullets
+  - Place list items beside one another
+  - Remove default padding on the unordered list
+  - Center text within the link after padding has been applied to the link */
+.nav {
+    
+    text-align: center;
+  }
+/* 10. Update the `nav` links
+  - Apply an appropriate display property value so that you are able to add padding
+  - Add padding to the top and bottom with the value of `.5em` and set the left and right value to `.75em` 
+  - Give links a `border radius` of `8px` */
+  .nav {
+    display: inline;
+    padding-left: .75em;
+    padding-right: .75em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: 8px;
+  }
