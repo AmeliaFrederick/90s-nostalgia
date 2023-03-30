@@ -90,9 +90,56 @@ header {
   - Text color is white
   - Solid border that is 2px solid white
   - Remove underline */
-.nav a{
+.nav a:link, .nav a:visited{
   background-color: purple;
   color: white;
   border: 2px, solid, white;
   text-decoration: none;
+}
+/* 12. Update `nav` link states for `hover` and `focus`
+  - Background color is white
+  - Text color is purple
+  - Solid border that is 2px solid purple */
+.nav a:hover, .nav a:focus{
+  background-color: white;
+  color: purple;
+  border: 2px, solid, purple;
+}
+/* 13. Select element with class of `hero`
+  - Set width to be 100%
+  - Add padding to the top and bottom with the value of `10em` and set the left and right value to `0`
+  - Add `background-image: url("../images/greatest-90s-fashion-trends.webp");`
+  - Add `background-repeat: no-repeat;`
+  - Add `background-size: cover;`
+  - Add `background-position: top center;`
+  - Note: We will be getting into more about the background property next week so I'm not expecting you to fully understand, just apply. */
+.hero {
+  width: 100%;
+  padding-top: 10em;
+  padding-bottom: 10em;
+  padding-left: 0%;
+  padding-right: 0%;
+  background-image: url("../images/greatest-90s-fashion-trends.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+/* 14. Select the `h1` with the hero section
+  - Set width to `75%`
+  - Add padding to all sides with value `.5em`
+  - Center the content using the property `margin` without applying specific values. Think automatically calculated on left and right.
+  - Change text color to white
+  - Align text in the center
+  - Change font size to 2rem
+  - Apply a text shadow with offsets and blur of 2px, and set color using `rgba(0,0,0,.8)`
+  - Change background color to use `rgba(0,0,0,.25)` */
+.hero > .wrapper > h1 {
+  width: 75%;
+  padding: .5em;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px, rgba(0,0,0,.8);
+  background-color: rgba(0,0,0,.25);
 }
