@@ -77,7 +77,7 @@ header {
   - Apply an appropriate display property value so that you are able to add padding
   - Add padding to the top and bottom with the value of `.5em` and set the left and right value to `.75em` 
   - Give links a `border radius` of `8px` */
-  .nav a{
+.nav a{
     box-sizing: border-box;
     padding-left: .75em;
     padding-right: .75em;
@@ -136,10 +136,50 @@ header {
 .hero > .wrapper > h1 {
   width: 75%;
   padding: .5em;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
   text-align: center;
   font-size: 2rem;
   text-shadow: 2px, rgba(0,0,0,.8);
   background-color: rgba(0,0,0,.25);
+}
+/* 15. Select the section with the class of `trends`
+  - Change background color to `purple` */
+.trends {
+    background-color: purple;
+  }
+/* 16. Select the figure element within the section with the class of `trends`
+  - Set `width` to `22%`
+  - Apply an appropriate display property value so that you are able to display the figures beside one another
+  - Align the figures to be centered within its parent container */
+.figure {
+  width: 22%;
+  align-items: center;
+}
+/* 17. Select the caption within the figure
+  - Change text color to `white`
+  - Adjust style of text to be `italic` */
+figcaption {
+    color: white;
+    font-style: italic;
+  }
+/* 18. Select element with the class of `icon`
+  - Apply an appropriate display property value so that you are able to add padding
+  - Add padding to the top and bottom with the value of `2em` and set the left and right value to `0` */
+.icon {
+    display: block;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+/* 19. Select the images within the element with the class of `.icon`
+  - Change width to be 260px
+  - float the element to the left
+  - Give some space to the right of the image with margin set to `2em` */  
+.icon > img {
+  width: 260px;
+  float: left;
+  margin-right: 2em;
 }
